@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
   button {
     cursor: pointer;
     font-size: 1rem;
-    color: #333;
+    color: ${({ theme }) => theme.colors.white[100]};
   }
 
   [disabled] {
