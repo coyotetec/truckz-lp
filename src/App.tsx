@@ -1,5 +1,13 @@
+import { Header } from './components/Header';
+import { GlobalStyles } from './styles/GlobalStyles';
+
 function App() {
-  return <h1>hero</h1>;
+  return (
+    <>
+      <GlobalStyles />
+      <Header />
+    </>
+  );
 }
 
 export default App;
