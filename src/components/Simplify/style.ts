@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.black[500]};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
   width: 100%;
 `;
 
@@ -22,7 +26,7 @@ export const Content = styled.div`
 `;
 
 export const Steps = styled.div`
-  align-items: center;
+  align-items: start;
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   gap: 6rem;
@@ -34,5 +38,6 @@ export const Steps = styled.div`
     color: ${({ theme }) => theme.colors.white[200]};
     font-size: 24px;
     font-weight: 200;
+    margin-bottom: 1.5rem;
   }
 `;
