@@ -1,4 +1,4 @@
-import { Container, Content } from './style';
+import { Button, Container, Content } from './style';
 
 export function Hero() {
   return (
@@ -9,6 +9,9 @@ export function Hero() {
             O caminho mais rápido para <span>transportar</span> suas{' '}
             <span>cargas</span>.
           </h1>
+          <a href="">
+            <Button type="button">Comece a transportar</Button>
+          </a>
         </div>
       </Content>
     </Container>
