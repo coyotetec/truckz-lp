@@ -10,16 +10,16 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   align-items: center;
+  display: flex;
   background-image: url(${bgHero});
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  display: flex;
+  background-size: cover;
   height: 90%;
 
   div {
-    max-width: 1120px;
     margin: 0 auto;
+    max-width: 1120px;
     width: 100%;
   }
 
@@ -30,8 +30,8 @@ export const Content = styled.div`
 
     span {
       text-decoration: underline;
-      text-underline-offset: 0.5rem;
       text-decoration-color: ${({ theme }) => theme.colors.primary[400]};
+      text-underline-offset: 0.5rem;
     }
   }
 `;

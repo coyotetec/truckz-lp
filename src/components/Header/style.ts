@@ -5,8 +5,8 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.colors.black[600]};
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 6rem;
+  justify-content: center;
   position: fixed;
   width: 100%;
 `;
@@ -23,15 +23,15 @@ export const Content = styled.div`
 export const Nav = styled.nav`
   display: flex;
   gap: 2.25rem;
-  width: 100%;
   justify-content: center;
+  width: 100%;
 
   li {
     list-style: none;
 
     a {
-      text-decoration: none;
       color: ${({ theme }) => theme.colors.white[100]};
+      text-decoration: none;
     }
   }
 `;
