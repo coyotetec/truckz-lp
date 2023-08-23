@@ -12,7 +12,9 @@ export function Download() {
         <img src={smartphones} alt="Smartphones exibindo a tela do truckz" />
         <div>
           <h1>Transporte inteligente ao seu alcance.</h1>
-          <h3>Instale o truckz e comece Já!</h3>
+          <h3>
+            Instale o <strong>truckz</strong> e comece Já!
+          </h3>
           <img className="badge" src={apple} alt="Badge de download da Apple" />
           <img
             className="badge"

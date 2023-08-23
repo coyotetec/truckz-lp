@@ -13,7 +13,6 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   align-items: center;
-  color: ${({ theme }) => theme.colors.white[100]};
   display: flex;
   margin: 0 auto;
   max-width: 70rem;
