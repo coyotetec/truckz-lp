@@ -19,10 +19,16 @@ export function Features() {
               descubra uma rede de motoristas.
             </p>
           </div>
-          <img src={feature1} alt="" />
+          <img
+            src={feature1}
+            alt="Ilustração de pessoas carregando caixas com localização"
+          />
         </Feature>
         <Feature widthText="33.875rem">
-          <img src={feature2} alt="" />
+          <img
+            src={feature2}
+            alt="Ilustração de mulher buscando um perfil ideal de motorista"
+          />
           <div>
             <h2>Busca de motoristas</h2>
             <p>
@@ -39,7 +45,7 @@ export function Features() {
               locais e datas de entrega.
             </p>
           </div>
-          <img src={feature3} alt="" />
+          <img src={feature3} alt="Motorista carregando caixas no carro" />
         </Feature>
       </Content>
     </Container>

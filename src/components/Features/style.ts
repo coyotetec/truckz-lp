@@ -8,6 +8,7 @@ export const Container = styled.section`
   height: 101vh;
   justify-content: flex-end;
   padding-top: 6rem;
+  padding-bottom: 2rem;
 `;
 
 export const Content = styled.div`

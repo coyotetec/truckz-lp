@@ -7,6 +7,7 @@ import { Features } from './components/Features';
 import mainTheme from './styles/themes/mainTheme';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Simplify />
         <Download />
         <Features />
+        <Footer />
         <GlobalStyles />
       </ThemeProvider>
     </>
