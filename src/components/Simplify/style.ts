@@ -11,7 +11,7 @@ export const Container = styled.section`
 
 export const Content = styled.div`
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 70rem;
   width: 100%;
 
   h1 {

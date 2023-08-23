@@ -16,7 +16,7 @@ export const Content = styled.div`
   color: ${({ theme }) => theme.colors.white[100]};
   display: flex;
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 70rem;
   width: 100%;
 `;
 

@@ -19,7 +19,7 @@ export const Content = styled.div`
 
   div {
     margin: 0 auto;
-    max-width: 1120px;
+    max-width: 70rem;
     width: 100%;
   }
 
