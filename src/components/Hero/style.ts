@@ -15,7 +15,7 @@ export const Content = styled.div`
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90%;
+  height: 94%;
 
   div {
     margin: 0 auto;

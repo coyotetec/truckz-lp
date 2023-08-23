@@ -5,7 +5,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 44vh;
   width: 100%;
 `;
 
