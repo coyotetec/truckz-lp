@@ -19,6 +19,21 @@ export const Content = styled.div`
   max-width: 70rem;
   padding: 0 1rem;
   width: 100%;
+
+  .image {
+    z-index: 10;
+  }
+
+  .hamburger-react {
+    display: none;
+  }
+
+  @media ${devices.md} {
+    .hamburger-react {
+      display: block;
+      z-index: 10;
+    }
+  }
 `;
 
 export const Nav = styled.nav`

@@ -28,10 +28,8 @@ export const Content = styled.div`
 
 export const Steps = styled.div`
   align-items: start;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  display: flex;
   gap: 6rem;
-  justify-items: center;
   justify-content: center;
   width: 100%;
 

@@ -1,12 +1,13 @@
 import { Container, Content, Nav } from './style';
 
 import logo from '../../assets/logo.svg';
+import { Burger } from '../Burger';
 
 export function Header() {
   return (
     <Container>
       <Content>
-        <a href="#home">
+        <a href="#home" className="image">
           <img src={logo} alt="Logo do truckz" />
         </a>
         <Nav>
@@ -23,6 +24,7 @@ export function Header() {
             <a href="#features">Funcionalidades</a>
           </li>
         </Nav>
+        <Burger />
       </Content>
     </Container>
   );
