@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.header`
   align-items: center;
@@ -16,6 +17,7 @@ export const Content = styled.div`
   display: flex;
   margin: 0 auto;
   max-width: 70rem;
+  padding: 0 1rem;
   width: 100%;
 `;
 
@@ -32,5 +34,9 @@ export const Nav = styled.nav`
       color: ${({ theme }) => theme.colors.white[100]};
       text-decoration: none;
     }
+  }
+
+  @media ${devices.md} {
+    display: none;
   }
 `;

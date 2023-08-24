@@ -18,6 +18,7 @@ export const Content = styled.div`
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 70rem;
+  padding: 0 1rem;
 
   h1 {
     color: ${({ theme }) => theme.colors.white[100]};

@@ -6,7 +6,7 @@ import feature3 from '../../assets/feature3.svg';
 
 export function Features() {
   return (
-    <Container>
+    <Container id="features">
       <Content>
         <h1>
           O melhor do <strong>truckz</strong>

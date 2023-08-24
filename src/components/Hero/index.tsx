@@ -2,7 +2,7 @@ import { Button, Container, Content } from './style';
 
 export function Hero() {
   return (
-    <Container>
+    <Container id="home">
       <Content>
         <div>
           <h1>

@@ -17,6 +17,7 @@ export const Content = styled.div`
   justify-content: center;
   margin: 0 auto;
   max-width: 70rem;
+  padding: 0 1rem;
 
   h1 {
     color: ${({ theme }) => theme.colors.white[100]};

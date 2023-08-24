@@ -6,21 +6,21 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <a href="">
+        <a href="#home">
           <img src={logo} alt="Logo do truckz" />
         </a>
         <Nav>
           <li>
-            <a href="">Início</a>
+            <a href="#home">Início</a>
           </li>
           <li>
-            <a href="">A Simplicidade</a>
+            <a href="#simplify">A Simplicidade</a>
           </li>
           <li>
-            <a href="">Baixe o app</a>
+            <a href="#download">Baixe o app</a>
           </li>
           <li>
-            <a href="">Funcionalidades</a>
+            <a href="#features">Funcionalidades</a>
           </li>
         </Nav>
       </Content>

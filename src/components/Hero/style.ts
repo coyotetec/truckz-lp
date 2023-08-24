@@ -16,6 +16,7 @@ export const Content = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   height: 94%;
+  padding: 0 1rem;
 
   div {
     margin: 0 auto;

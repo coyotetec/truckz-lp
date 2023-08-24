@@ -6,7 +6,7 @@ import successPhone from '../../assets/successPhone.svg';
 
 export function Simplify() {
   return (
-    <Container>
+    <Container id="simplify">
       <Content>
         <h1>Veja como é simples</h1>
         <Steps>

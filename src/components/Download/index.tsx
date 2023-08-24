@@ -7,7 +7,7 @@ import box from '../../assets/box.svg';
 
 export function Download() {
   return (
-    <Container>
+    <Container id="download">
       <Content>
         <img src={smartphones} alt="Smartphones exibindo a tela do truckz" />
         <div>
