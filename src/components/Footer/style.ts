@@ -11,7 +11,7 @@ export const Container = styled.footer`
 export const Content = styled.div`
   margin: 0 auto;
   max-width: 70rem;
-  pad: 0 1rem;
+  padding: 0 1rem;
   width: 100%;
 
   p {
