@@ -16,12 +16,19 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
-    font-size: 1rem;
     color: ${({ theme }) => theme.colors.white[100]};
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
   }
 
   [disabled] {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
   }
 `;

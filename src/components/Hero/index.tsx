@@ -9,7 +9,7 @@ export function Hero() {
             O caminho mais rápido para <span>transportar</span> suas{' '}
             <span>cargas</span>.
           </h1>
-          <a href="">
+          <a href="#download">
             <Button type="button">Comece a transportar</Button>
           </a>
         </div>

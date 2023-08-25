@@ -1,4 +1,5 @@
 type Breakpoints = {
+  xss: string;
   xs: string;
   sm: string;
   md: string;
@@ -8,8 +9,9 @@ type Breakpoints = {
 };
 
 const breakpoints: Breakpoints = {
-  xs: '320px',
-  sm: '640px',
+  xss: '390px',
+  xs: '400px',
+  sm: '540px',
   md: '768px',
   lg: '1024px',
   xl: '1280px',

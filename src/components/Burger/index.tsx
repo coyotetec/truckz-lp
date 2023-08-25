@@ -32,7 +32,7 @@ export function Burger() {
   return (
     <>
       <Icon>
-        <Hamburger toggled={isOpen} toggle={setOpen} color="#267233" />;
+        <Hamburger toggled={isOpen} toggle={setOpen} color="#FFFFFF" />;
       </Icon>
       {isOpen && (
         <Container>

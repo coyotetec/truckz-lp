@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import bgHero from '../../assets/heroBackground2.png';
+import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.black[500]};
@@ -35,6 +36,28 @@ export const Content = styled.div`
       text-underline-offset: 0.5rem;
     }
   }
+
+  @media ${devices.md} {
+    background-position: left -6rem center;
+    height: 80%;
+
+    h1 {
+      max-width: 38rem;
+    }
+  }
+
+  @media ${devices.sm} {
+    background-position: left -16rem center;
+
+    h1 {
+      font-size: 2.8rem;
+      max-width: 22rem;
+    }
+  }
+
+  @media ${devices.xs} {
+    background-position: left -13rem center;
+  }
 `;
 
 export const Button = styled.button`
@@ -42,12 +65,16 @@ export const Button = styled.button`
   border: none;
   border-radius: 8px;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 3.25rem;
   padding: 1.2rem 2rem;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
     opacity: 0.95;
+  }
+
+  @media ${devices.md} {
+    padding: 1rem 1.5rem;
   }
 `;
