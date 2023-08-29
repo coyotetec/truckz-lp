@@ -31,9 +31,9 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 87.5%;
     }
 
-    /* body {
+    body {
       overflow-y: hidden;
-  } */
+  }
 
   }
 `;
