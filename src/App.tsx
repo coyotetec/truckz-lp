@@ -16,9 +16,9 @@ function App() {
         <Header />
         <Hero />
         <Simplify />
-        <Download />
-        <Features />
-        <Footer />
+        {/* <Download /> */}
+        {/* <Features /> */}
+        {/* <Footer /> */}
         <GlobalStyles />
       </ThemeProvider>
     </>

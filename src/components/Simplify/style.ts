@@ -5,7 +5,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 44vh;
+  height: auto;
   width: 100%;
 `;
 
@@ -29,8 +29,10 @@ export const Content = styled.div`
 export const Steps = styled.div`
   align-items: start;
   display: flex;
+  flex-wrap: wrap;
   gap: 6rem;
   justify-content: center;
+  padding-bottom: 4rem;
   width: 100%;
 
   h2 {
