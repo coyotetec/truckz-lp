@@ -32,8 +32,12 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-      overflow-y: hidden;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
   }
 
+  body::-webkit-scrollbar {
+    display: none;
   }
+}
 `;
