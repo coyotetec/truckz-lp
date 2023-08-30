@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.section`
   align-items: center;
@@ -8,6 +9,11 @@ export const Container = styled.section`
   justify-content: center;
   height: 100vh;
   padding-top: 6rem;
+
+  @media ${devices.lg} {
+    height: auto;
+    padding-bottom: 3rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -19,6 +25,10 @@ export const Content = styled.div`
   margin: 0 auto;
   max-width: 70rem;
   padding: 0 1rem;
+
+  img {
+    max-width: 90%;
+  }
 
   h1 {
     color: ${({ theme }) => theme.colors.white[100]};
@@ -35,6 +45,10 @@ export const Content = styled.div`
 
   .badge {
     margin-bottom: 3.25rem;
+
+    @media ${devices.lg} {
+      margin-bottom: 2rem;
+    }
   }
 
   .points {
@@ -49,5 +63,10 @@ export const Content = styled.div`
       font-weight: 500;
       max-width: 25.3125rem;
     }
+  }
+
+  @media ${devices.md} {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 `;

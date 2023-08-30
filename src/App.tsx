@@ -1,7 +1,7 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Simplify } from './components/Simplify';
-// import { Download } from './components/Download';
+import { Download } from './components/Download';
 // import { Features } from './components/Features';
 // import { Footer } from './components/Footer';
 
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Hero />
         <Simplify />
-        {/* <Download /> */}
+        <Download />
         {/* <Features /> */}
         {/* <Footer /> */}
         <GlobalStyles />
