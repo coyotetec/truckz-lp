@@ -11,7 +11,7 @@ export function Features() {
         <h1>
           O melhor do <strong>truckz</strong>
         </h1>
-        <Feature widthText="28.25rem">
+        <Feature widthText="28.25rem" reverse>
           <div>
             <h2>Anúncio de cargas</h2>
             <p>
@@ -37,7 +37,7 @@ export function Features() {
             </p>
           </div>
         </Feature>
-        <Feature widthText="29.3125rem">
+        <Feature widthText="29.3125rem" reverse>
           <div>
             <h2>Encontre cargas disponíveis</h2>
             <p>

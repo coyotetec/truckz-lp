@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.section`
   align-items: center;
@@ -9,6 +10,10 @@ export const Container = styled.section`
   justify-content: flex-end;
   padding-top: 6rem;
   padding-bottom: 2rem;
+
+  @media ${devices.md} {
+    height: auto;
+  }
 `;
 
 export const Content = styled.div`
@@ -36,6 +41,7 @@ export const Content = styled.div`
 
 type FeatureProps = {
   widthText?: string;
+  reverse?: boolean;
 };
 
 export const Feature = styled.div<FeatureProps>`
@@ -55,6 +61,15 @@ export const Feature = styled.div<FeatureProps>`
 
     p {
       color: ${({ theme }) => theme.colors.white[300]};
+    }
+  }
+
+  @media ${devices.md} {
+    flex-direction: ${({ reverse }) => (reverse ? 'column-reverse' : 'column')};
+
+    div {
+      padding-top: 0.5rem;
+      max-width: 28.25rem;
     }
   }
 `;
