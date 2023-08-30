@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import bgHero from '../../assets/1080-compress.webp';
+import bgHeroDesktop from '../../assets/heroBg-Desktop.png';
+import bgHeroMobile from '../../assets/heroBg-mobile.webp';
 import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.section`
@@ -12,7 +13,7 @@ export const Container = styled.section`
 export const Content = styled.div`
   align-items: center;
   display: flex;
-  background-image: url(${bgHero});
+  background-image: url(${bgHeroDesktop});
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,6 +39,7 @@ export const Content = styled.div`
   }
 
   @media ${devices.md} {
+    background-image: url(${bgHeroMobile});
     background-position: left -6rem center;
     height: 80%;
 
