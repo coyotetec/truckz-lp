@@ -35,6 +35,13 @@ export const Steps = styled.div`
   padding-bottom: 4rem;
   width: 100%;
 
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   h2 {
     color: ${({ theme }) => theme.colors.white[200]};
     font-size: 24px;
