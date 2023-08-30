@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgHero from '../../assets/heroBackground2-min.png';
+import bgHero from '../../assets/1080-compress.webp';
 import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.section`
