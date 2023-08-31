@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bgHeroDesktop from '../../assets/heroBg-Desktop.png';
+import bgHeroDesktop from '../../assets/heroBg-desktop.png';
 import bgHeroMobile from '../../assets/heroBg-mobile.webp';
 import { devices } from '../../styles/mediaQuerys';
 
