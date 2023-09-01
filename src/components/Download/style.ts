@@ -8,7 +8,6 @@ export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  padding-top: 6rem;
 
   @media ${devices.lg} {
     height: auto;
@@ -24,7 +23,7 @@ export const Content = styled.div`
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 70rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 
   img {
     max-width: 90%;
@@ -45,6 +44,10 @@ export const Content = styled.div`
 
   .badge {
     margin-bottom: 3.25rem;
+
+    & + .badge {
+      margin-left: 0.75rem;
+    }
 
     @media ${devices.lg} {
       margin-bottom: 2rem;
