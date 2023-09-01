@@ -4,6 +4,7 @@ export const Icon = styled.div`
   position: absolute;
   right: 16px;
   top: 24px;
+  z-index: 100;
 `;
 
 export const Container = styled.div`
@@ -17,6 +18,7 @@ export const Container = styled.div`
   position: absolute;
   top: 0;
   width: 100vw;
+  z-index: 50;
 `;
 
 export const Nav = styled.nav`

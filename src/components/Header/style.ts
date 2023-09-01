@@ -10,6 +10,7 @@ export const Container = styled.header`
   justify-content: center;
   position: fixed;
   width: 100%;
+  z-index: 100;
 `;
 
 export const Content = styled.div`
@@ -17,11 +18,11 @@ export const Content = styled.div`
   display: flex;
   margin: 0 auto;
   max-width: 70rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   width: 100%;
 
   .image {
-    z-index: 10;
+    z-index: 999;
   }
 
   .hamburger-react {
@@ -41,6 +42,7 @@ export const Nav = styled.nav`
   gap: 2.25rem;
   justify-content: center;
   width: 100%;
+  margin-left: -176px;
 
   li {
     list-style: none;
@@ -49,6 +51,11 @@ export const Nav = styled.nav`
       color: ${({ theme }) => theme.colors.white[100]};
       text-decoration: none;
     }
+  }
+
+  @media ${devices.lg} {
+    margin-left: 0;
+    justify-content: flex-end;
   }
 
   @media ${devices.md} {
