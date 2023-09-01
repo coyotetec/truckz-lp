@@ -8,7 +8,7 @@ export function Simplify() {
   return (
     <Container id="simplify">
       <Content>
-        <h1>Veja como é simples</h1>
+        <h1>Veja Como é Simples</h1>
         <Steps>
           <div>
             <h2>1. Anuncie sua carga</h2>
