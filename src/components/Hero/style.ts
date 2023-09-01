@@ -4,21 +4,16 @@ import bgHeroMobile from '../../assets/heroBg-mobile.webp';
 import { devices } from '../../styles/mediaQuerys';
 
 export const Container = styled.section`
-  background-color: ${({ theme }) => theme.colors.black[500]};
-  height: 100vh;
-  padding-top: 6rem;
-  width: 100%;
-`;
-
-export const Content = styled.div`
   align-items: center;
   display: flex;
   background-image: url(${bgHeroDesktop});
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 94%;
-  padding: 0 1rem;
+  height: 94vh;
+  width: 100%;
+  padding-top: 6rem;
+  padding: 0 1.5rem;
 
   div {
     margin: 0 auto;
@@ -40,8 +35,8 @@ export const Content = styled.div`
 
   @media ${devices.md} {
     background-image: url(${bgHeroMobile});
-    background-position: left -6rem center;
-    height: 80%;
+    background-position: left -24rem center;
+    height: 90vh;
 
     h1 {
       max-width: 38rem;
@@ -49,7 +44,7 @@ export const Content = styled.div`
   }
 
   @media ${devices.sm} {
-    background-position: left -16rem center;
+    background-position: left -26rem center;
 
     h1 {
       font-size: 2.8rem;
@@ -58,7 +53,7 @@ export const Content = styled.div`
   }
 
   @media ${devices.xs} {
-    background-position: left -13rem center;
+    background-position: left -22rem center;
   }
 `;
 
@@ -66,10 +61,10 @@ export const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.primary[400]};
   border: none;
   border-radius: 8px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 3.25rem;
-  padding: 1.2rem 2rem;
+  padding: 1rem 1.8rem;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
@@ -78,5 +73,6 @@ export const Button = styled.button`
 
   @media ${devices.md} {
     padding: 1rem 1.5rem;
+    font-size: 1.4rem;
   }
 `;
