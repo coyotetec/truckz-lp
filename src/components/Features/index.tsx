@@ -8,10 +8,8 @@ export function Features() {
   return (
     <Container id="features">
       <Content>
-        <h1>
-          O melhor do <strong>truckz</strong>
-        </h1>
-        <Feature widthText="28.25rem" reverse>
+        <h1>O Melhor do Truckz</h1>
+        <Feature reverse>
           <div>
             <h2>Anúncio de cargas</h2>
             <p>
@@ -24,7 +22,7 @@ export function Features() {
             alt="Ilustração de pessoas carregando caixas com localização"
           />
         </Feature>
-        <Feature widthText="33.875rem">
+        <Feature>
           <img
             src={feature2}
             alt="Ilustração de mulher buscando um perfil ideal de motorista"
@@ -37,7 +35,7 @@ export function Features() {
             </p>
           </div>
         </Feature>
-        <Feature widthText="29.3125rem" reverse>
+        <Feature reverse>
           <div>
             <h2>Encontre cargas disponíveis</h2>
             <p>
