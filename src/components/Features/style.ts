@@ -9,7 +9,7 @@ export const Container = styled.section`
   height: 100vh;
   justify-content: center;
 
-  @media ${devices.md} {
+  @media ${devices.lg} {
     height: auto;
   }
 `;
@@ -21,7 +21,7 @@ export const Content = styled.div`
   margin: 0 auto;
   max-width: 70rem;
   width: 100%;
-  padding: 0 1.5rem;
+  padding: 4rem 1.5rem;
 
   h1 {
     color: ${({ theme }) => theme.colors.white[100]};
@@ -35,7 +35,6 @@ export const Content = styled.div`
 `;
 
 type FeatureProps = {
-  widthText?: string;
   reverse?: boolean;
 };
 

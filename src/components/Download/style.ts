@@ -9,9 +9,9 @@ export const Container = styled.section`
   justify-content: center;
   height: 100vh;
 
-  @media ${devices.lg} {
+  @media ${devices.xmd} {
     height: auto;
-    padding-bottom: 3rem;
+    padding: 4rem 0;
   }
 `;
 
