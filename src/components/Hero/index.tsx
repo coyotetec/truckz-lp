@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { Button, Container } from './style';
 
 export function Hero() {
@@ -8,9 +9,9 @@ export function Hero() {
           O caminho mais rápido para <span>transportar</span> suas{' '}
           <span>cargas</span>.
         </h1>
-        <a href="#download">
+        <Link to="download" smooth duration={500}>
           <Button type="button">Comece a Transportar</Button>
-        </a>
+        </Link>
       </div>
     </Container>
   );

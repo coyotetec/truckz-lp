@@ -1,4 +1,5 @@
 import { Container, Content, Nav } from './style';
+import { Link } from 'react-scroll';
 
 import logo from '../../assets/logo.svg';
 import { Burger } from '../Burger';
@@ -7,21 +8,29 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <a href="#home" className="image">
+        <Link to="home" smooth duration={500} className="image">
           <img src={logo} alt="Logo do truckz" />
-        </a>
+        </Link>
         <Nav>
           <li>
-            <a href="#home">Início</a>
+            <Link to="home" smooth duration={500}>
+              Início
+            </Link>
           </li>
           <li>
-            <a href="#simplify">A Simplicidade</a>
+            <Link to="simplify" smooth duration={500} offset={-90}>
+              A Simplicidade
+            </Link>
           </li>
           <li>
-            <a href="#download">Baixe o app</a>
+            <Link to="download" smooth duration={500} offset={-90}>
+              Baixe o app
+            </Link>
           </li>
           <li>
-            <a href="#features">Funcionalidades</a>
+            <Link to="features" smooth duration={500} offset={-90}>
+              Funcionalidades
+            </Link>
           </li>
         </Nav>
         <Burger />

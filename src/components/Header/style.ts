@@ -23,6 +23,10 @@ export const Content = styled.div`
 
   .image {
     z-index: 999;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .hamburger-react {
@@ -50,6 +54,10 @@ export const Nav = styled.nav`
     a {
       color: ${({ theme }) => theme.colors.white[100]};
       text-decoration: none;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
