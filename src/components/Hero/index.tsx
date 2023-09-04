@@ -4,7 +4,7 @@ import { Button, Container } from './style';
 export function Hero() {
   return (
     <Container id="home">
-      <div>
+      <div data-aos="fade-right">
         <h1>
           O caminho mais rápido para <span>transportar</span> suas{' '}
           <span>cargas</span>.
