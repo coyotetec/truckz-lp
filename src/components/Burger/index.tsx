@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Turn as Hamburger } from 'hamburger-react';
 import { Container, Icon, Nav } from './style';
+import { Link } from 'react-scroll';
 
 type Navlinks = {
   name: string;
@@ -10,19 +11,19 @@ type Navlinks = {
 const navLinks: Navlinks[] = [
   {
     name: 'Início',
-    link: '#home',
+    link: 'home',
   },
   {
     name: 'A Simplicidade',
-    link: '#simplify',
+    link: 'simplify',
   },
   {
     name: 'Baixe o app',
-    link: '#download',
+    link: 'download',
   },
   {
     name: 'Funcionalidades',
-    link: '#features',
+    link: 'features',
   },
 ];
 
@@ -38,8 +39,16 @@ export function Burger() {
         <Container>
           <Nav>
             {navLinks.map(({ link, name }) => (
-              <li key={name} onClick={() => setOpen(!isOpen)}>
-                <a href={link}>{name}</a>
+              <li key={name}>
+                <Link
+                  to={link}
+                  smooth
+                  duration={500}
+                  offset={-80}
+                  onClick={() => setOpen(!isOpen)}
+                >
+                  {name}
+                </Link>
               </li>
             ))}
           </Nav>

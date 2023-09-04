@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
+    background-color: ${({ theme }) => theme.colors.black[500]};
   }
 
   button {

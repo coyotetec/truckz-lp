@@ -32,7 +32,9 @@ export const Nav = styled.nav`
       color: ${({ theme }) => theme.colors.white[100]};
       text-decoration: none;
 
-      &:hover {
+      &:active,
+      &:hover,
+      &:focus {
         color: ${({ theme }) => theme.colors.primary[400]};
       }
     }

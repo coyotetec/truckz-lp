@@ -28,7 +28,7 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link to="features" smooth duration={500} offset={-90}>
+            <Link to="features" smooth duration={500} offset={-50}>
               Funcionalidades
             </Link>
           </li>

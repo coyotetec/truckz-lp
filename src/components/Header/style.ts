@@ -50,14 +50,18 @@ export const Nav = styled.nav`
 
   li {
     list-style: none;
+    font-size: 1.1rem;
 
     a {
       color: ${({ theme }) => theme.colors.white[100]};
       text-decoration: none;
-    }
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s ease-in-out;
 
-    &:hover {
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+        border-bottom: 2px solid ${({ theme }) => theme.colors.primary[400]};
+      }
     }
   }
 
