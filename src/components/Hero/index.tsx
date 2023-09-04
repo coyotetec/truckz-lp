@@ -9,7 +9,7 @@ export function Hero() {
           O caminho mais rápido para <span>transportar</span> suas{' '}
           <span>cargas</span>.
         </h1>
-        <Link to="download" smooth duration={500}>
+        <Link to="download" smooth duration={500} offset={-80}>
           <Button type="button">Comece a Transportar</Button>
         </Link>
       </div>

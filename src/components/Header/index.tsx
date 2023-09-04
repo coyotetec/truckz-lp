@@ -23,7 +23,7 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link to="download" smooth duration={500} offset={-90}>
+            <Link to="download" smooth duration={500} offset={-80}>
               Baixe o app
             </Link>
           </li>
