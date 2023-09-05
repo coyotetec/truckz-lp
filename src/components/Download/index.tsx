@@ -6,10 +6,19 @@ import google from '../../assets/google-badge.svg';
 import box from '../../assets/box.svg';
 
 export function Download() {
+  const { innerWidth: width } = window;
+  const isMobile = width <= 768;
+
   return (
     <Container id="download">
       <Content>
-        <img src={smartphones} alt="Smartphones exibindo a tela do truckz" />
+        <img
+          src={smartphones}
+          alt="Smartphones exibindo a tela do truckz"
+          data-aos="fade-up"
+          data-aos-offset={isMobile ? '200' : '-100'}
+          data-aos-duration="1500"
+        />
         <div>
           <h1>Transporte inteligente ao seu alcance.</h1>
           <h3>
@@ -21,15 +30,32 @@ export function Download() {
             src={google}
             alt="Badge de download do Google"
           />
-          <div className="points">
+          <div
+            className="points"
+            data-aos="flip-down"
+            data-aos-duration="500"
+            data-aos-offset={isMobile ? '600' : '0'}
+          >
             <img src={box} alt="Ícone de caixa" />
             <p>Encontre motoristas para suas cargas de forma rápida e fácil.</p>
           </div>
-          <div className="points">
+          <div
+            className="points"
+            data-aos="flip-down"
+            data-aos-delay="300"
+            data-aos-duration="500"
+            data-aos-offset={isMobile ? '400' : '0'}
+          >
             <img src={box} alt="Ícone de caixa" />
             <p>Descubra cargas para serem transportadas.</p>
           </div>
-          <div className="points">
+          <div
+            className="points"
+            data-aos="flip-down"
+            data-aos-delay="600"
+            data-aos-duration="500"
+            data-aos-offset={isMobile ? '400' : '0'}
+          >
             <img src={box} alt="Ícone de caixa" />
             <p>Faça uma seleção dos seus motoristas favoritos.</p>
           </div>

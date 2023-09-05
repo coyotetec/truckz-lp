@@ -10,17 +10,17 @@ export function Simplify() {
       <Content>
         <h1>Veja Como é Simples</h1>
         <Steps>
-          <div data-aos="zoom-in" data-aos-duration="300">
+          <div data-aos="zoom-in">
             <h2>1. Anuncie sua carga</h2>
             <img src={deliveryman} alt="Homem amontoando caixas" />
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="600">
+          <div data-aos="zoom-in" data-aos-delay="200">
             <h2>2. Encontre um motorista</h2>
             <img src={truck} alt="Caminhão com ícones de localização" />
           </div>
 
-          <div data-aos="zoom-in" data-aos-duration="900">
+          <div data-aos="zoom-in" data-aos-delay="500">
             <h2>3. Entrega concluída</h2>
             <img src={successPhone} alt="Smartphone com símbolo de sucesso" />
           </div>

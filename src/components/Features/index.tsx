@@ -3,13 +3,28 @@ import { Container, Content, Feature } from './style';
 import feature1 from '../../assets/feature1.svg';
 import feature2 from '../../assets/feature2.svg';
 import feature3 from '../../assets/feature3.svg';
+import { useEffect, useState } from 'react';
 
 export function Features() {
+  const { innerWidth: width } = window;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (width <= 768) {
+      setIsMobile(true);
+    }
+  }, [width]);
+  console.log(isMobile);
+
   return (
     <Container id="features">
       <Content>
         <h1>O Melhor do Truckz</h1>
-        <Feature reverse>
+        <Feature
+          reverse
+          data-aos="zoom-in-up"
+          data-aos-offset={isMobile ? '1000' : '100'}
+        >
           <div>
             <h2>Anúncio de cargas</h2>
             <p>
@@ -22,7 +37,10 @@ export function Features() {
             alt="Ilustração de pessoas carregando caixas com localização"
           />
         </Feature>
-        <Feature>
+        <Feature
+          data-aos="zoom-in-up"
+          data-aos-offset={isMobile ? '600' : '100'}
+        >
           <img
             src={feature2}
             alt="Ilustração de mulher buscando um perfil ideal de motorista"
@@ -35,7 +53,11 @@ export function Features() {
             </p>
           </div>
         </Feature>
-        <Feature reverse>
+        <Feature
+          reverse
+          data-aos="zoom-in-up"
+          data-aos-offset={isMobile ? '500' : '100'}
+        >
           <div>
             <h2>Encontre cargas disponíveis</h2>
             <p>
