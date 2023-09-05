@@ -20,7 +20,7 @@ export function Simplify() {
             <img src={truck} alt="Caminhão com ícones de localização" />
           </div>
 
-          <div data-aos="zoom-in" data-aos-delay="500">
+          <div data-aos="zoom-in" data-aos-delay="350">
             <h2>3. Entrega concluída</h2>
             <img src={successPhone} alt="Smartphone com símbolo de sucesso" />
           </div>

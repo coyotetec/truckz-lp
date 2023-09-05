@@ -34,7 +34,7 @@ export function Download() {
             className="points"
             data-aos="flip-down"
             data-aos-duration="500"
-            data-aos-offset={isMobile ? '600' : '0'}
+            data-aos-offset={isMobile ? '300' : '0'}
           >
             <img src={box} alt="Ícone de caixa" />
             <p>Encontre motoristas para suas cargas de forma rápida e fácil.</p>
@@ -44,7 +44,7 @@ export function Download() {
             data-aos="flip-down"
             data-aos-delay="300"
             data-aos-duration="500"
-            data-aos-offset={isMobile ? '400' : '0'}
+            data-aos-offset={isMobile ? '200' : '0'}
           >
             <img src={box} alt="Ícone de caixa" />
             <p>Descubra cargas para serem transportadas.</p>
@@ -54,7 +54,7 @@ export function Download() {
             data-aos="flip-down"
             data-aos-delay="600"
             data-aos-duration="500"
-            data-aos-offset={isMobile ? '400' : '0'}
+            data-aos-offset={isMobile ? '100' : '0'}
           >
             <img src={box} alt="Ícone de caixa" />
             <p>Faça uma seleção dos seus motoristas favoritos.</p>

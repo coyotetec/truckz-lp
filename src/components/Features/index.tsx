@@ -23,7 +23,7 @@ export function Features() {
         <Feature
           reverse
           data-aos="zoom-in-up"
-          data-aos-offset={isMobile ? '1000' : '100'}
+          data-aos-offset={isMobile ? '300' : '100'}
         >
           <div>
             <h2>Anúncio de cargas</h2>
@@ -39,7 +39,7 @@ export function Features() {
         </Feature>
         <Feature
           data-aos="zoom-in-up"
-          data-aos-offset={isMobile ? '600' : '100'}
+          data-aos-offset={isMobile ? '200' : '100'}
         >
           <img
             src={feature2}
@@ -56,7 +56,7 @@ export function Features() {
         <Feature
           reverse
           data-aos="zoom-in-up"
-          data-aos-offset={isMobile ? '500' : '100'}
+          data-aos-offset={isMobile ? '100' : '100'}
         >
           <div>
             <h2>Encontre cargas disponíveis</h2>
