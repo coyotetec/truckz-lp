@@ -30,21 +30,15 @@ export function Download() {
             src={google}
             alt="Badge de download do Google"
           />
-          <div
-            className="points"
-            data-aos="flip-down"
-            data-aos-duration="500"
-            data-aos-offset={isMobile ? '300' : '0'}
-          >
+          <div className="points" data-aos="flip-down" data-aos-duration="500">
             <img src={box} alt="Ícone de caixa" />
             <p>Encontre motoristas para suas cargas de forma rápida e fácil.</p>
           </div>
           <div
             className="points"
             data-aos="flip-down"
-            data-aos-delay="300"
             data-aos-duration="500"
-            data-aos-offset={isMobile ? '200' : '0'}
+            data-aos-delay="300"
           >
             <img src={box} alt="Ícone de caixa" />
             <p>Descubra cargas para serem transportadas.</p>
@@ -52,9 +46,8 @@ export function Download() {
           <div
             className="points"
             data-aos="flip-down"
-            data-aos-delay="600"
+            data-aos-delay="500"
             data-aos-duration="500"
-            data-aos-offset={isMobile ? '100' : '0'}
           >
             <img src={box} alt="Ícone de caixa" />
             <p>Faça uma seleção dos seus motoristas favoritos.</p>
