@@ -8,10 +8,6 @@ export const Container = styled.section`
   flex-direction: column;
   height: auto;
   justify-content: center;
-
-  /* @media ${devices.xl} {
-    height: auto;
-  } */
 `;
 
 export const Content = styled.div`
