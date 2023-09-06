@@ -6,12 +6,12 @@ export const Container = styled.section`
   background-color: ${({ theme }) => theme.colors.black[500]};
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   justify-content: center;
 
-  @media ${devices.lg} {
+  /* @media ${devices.xl} {
     height: auto;
-  }
+  } */
 `;
 
 export const Content = styled.div`
