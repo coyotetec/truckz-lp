@@ -1,4 +1,4 @@
-import { Container, Content, Nav } from './style';
+import { Container, Content, Nav, LoginButton, SingUpButton } from './style';
 import { Link } from 'react-scroll';
 
 import logo from '../../assets/logo.svg';
@@ -8,7 +8,7 @@ export function Header() {
   return (
     <Container>
       <Content>
-        <Link to="home" smooth duration={500} className="image">
+        <Link to="home" smooth duration={500} className="image-link">
           <img src={logo} alt="Logo do truckz" />
         </Link>
         <Nav>
@@ -33,6 +33,14 @@ export function Header() {
             </Link>
           </li>
         </Nav>
+        <div className="div-buttons">
+          <Link to="">
+            <LoginButton>Faça Login</LoginButton>
+          </Link>
+          <Link to="">
+            <SingUpButton>Cadastre-se</SingUpButton>
+          </Link>
+        </div>
         <Burger />
       </Content>
     </Container>

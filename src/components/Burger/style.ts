@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Icon = styled.div`
   position: absolute;
   right: 16px;
-  top: 24px;
+  top: 20px;
   z-index: 100;
 `;
 

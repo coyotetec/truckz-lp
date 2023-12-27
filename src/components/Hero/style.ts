@@ -35,7 +35,7 @@ export const Container = styled.section`
 
   @media ${devices.md} {
     background-image: url(${bgHeroMobile});
-    background-position: left -24rem center;
+    background-position: center center;
     height: 90vh;
 
     h1 {
@@ -44,7 +44,7 @@ export const Container = styled.section`
   }
 
   @media ${devices.sm} {
-    background-position: left -26rem center;
+    background-position: left -27rem center;
 
     h1 {
       font-size: 2.8rem;

@@ -1,30 +1,19 @@
+import { useInView } from 'react-intersection-observer';
 import { Container, Content, Feature } from './style';
 
 import feature1 from '../../assets/feature1.svg';
 import feature2 from '../../assets/feature2.svg';
 import feature3 from '../../assets/feature3.svg';
-import { useEffect, useState } from 'react';
+import { BackToTopButton } from '../BackToTopButton';
 
 export function Features() {
-  const { innerWidth: width } = window;
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (width <= 768) {
-      setIsMobile(true);
-    }
-  }, [width]);
-  console.log(isMobile);
+  const { ref, inView } = useInView();
 
   return (
     <Container id="features">
       <Content>
         <h1>O Melhor do Truckz</h1>
-        <Feature
-          reverse
-          data-aos="zoom-in-up"
-          data-aos-offset={isMobile ? '100' : '100'}
-        >
+        <Feature reverse data-aos="zoom-in-up" data-aos-offset="100">
           <div>
             <h2>Anúncio de cargas</h2>
             <p>
@@ -37,27 +26,20 @@ export function Features() {
             alt="Ilustração de pessoas carregando caixas com localização"
           />
         </Feature>
-        <Feature
-          data-aos="zoom-in-up"
-          data-aos-offset={isMobile ? '100' : '100'}
-        >
+        <Feature data-aos="zoom-in-up" data-aos-offset="100">
           <img
             src={feature2}
             alt="Ilustração de mulher buscando um perfil ideal de motorista"
           />
           <div>
             <h2>Busca de motoristas</h2>
-            <p>
+            <p ref={ref}>
               Encontre motoristas ideais para suas cargas através de critérios
               como distância e avaliações.
             </p>
           </div>
         </Feature>
-        <Feature
-          reverse
-          data-aos="zoom-in-up"
-          data-aos-offset={isMobile ? '100' : '100'}
-        >
+        <Feature reverse data-aos="zoom-in-up" data-aos-offset="100">
           <div>
             <h2>Encontre cargas disponíveis</h2>
             <p>
@@ -67,6 +49,7 @@ export function Features() {
           </div>
           <img src={feature3} alt="Motorista carregando caixas no carro" />
         </Feature>
+        <BackToTopButton onVisible={inView ? '2px' : '96px'} />
       </Content>
     </Container>
   );
