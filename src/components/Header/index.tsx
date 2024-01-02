@@ -34,10 +34,10 @@ export function Header() {
           </li>
         </Nav>
         <div className="div-buttons">
-          <a href="https://app.truckz.com.br/" target="_blank" rel="noreferrer">
+          <a href="https://app.truckz.com.br/">
             <LoginButton>Faça Login</LoginButton>
           </a>
-          <a href="https://app.truckz.com.br/" target="_blank" rel="noreferrer">
+          <a href="https://app.truckz.com.br/">
             <SingUpButton>Cadastre-se</SingUpButton>
           </a>
         </div>
