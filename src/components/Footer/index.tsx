@@ -7,7 +7,7 @@ export function Footer() {
     <Container>
       <Content>
         <img src={logoFooter} alt="Logo do truckz" />
-        <p>Coyote Tecnologia © 2023 Todos os direitos reservados.</p>
+        <p>Coyote Tecnologia © 2024 - Todos os direitos reservados.</p>
       </Content>
     </Container>
   );
