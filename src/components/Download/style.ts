@@ -43,7 +43,8 @@ export const Content = styled.div`
   }
 
   .badge {
-    margin-bottom: 3.25rem;
+    margin-bottom: 2rem;
+    display: inline-block;
 
     & + .badge {
       margin-left: 0.75rem;

@@ -24,12 +24,17 @@ export function Download() {
           <h3>
             Instale o <strong>truckz</strong> e comece Já!
           </h3>
-          <img className="badge" src={apple} alt="Badge de download da Apple" />
-          <img
+          <a
+            href="https://apps.apple.com/pt/app/truckz/id6479165489"
+            target="_blank"
+            rel="noreferrer"
             className="badge"
-            src={google}
-            alt="Badge de download do Google"
-          />
+          >
+            <img src={apple} alt="Badge de download da Apple" />
+          </a>
+          <a href="" className="badge">
+            <img src={google} alt="Badge de download do Google" />
+          </a>
           <div className="points" data-aos="flip-down" data-aos-duration="500">
             <img src={box} alt="Ícone de caixa" />
             <p>Encontre motoristas para suas cargas de forma rápida e fácil.</p>
