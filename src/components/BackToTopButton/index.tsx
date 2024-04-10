@@ -10,7 +10,7 @@ type BackToTopButtonProps = {
 export function BackToTopButton({ onVisible }: BackToTopButtonProps) {
   return (
     <Link to="home" smooth duration={500}>
-      <ButtonTop show={onVisible}>
+      <ButtonTop $show={onVisible}>
         <span>Voltar ao topo</span>
         <img src={arrowTop} alt="" />
       </ButtonTop>

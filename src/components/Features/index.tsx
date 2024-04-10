@@ -13,7 +13,7 @@ export function Features() {
     <Container id="features">
       <Content>
         <h1>O Melhor do Truckz</h1>
-        <Feature reverse data-aos="zoom-in-up" data-aos-offset="100">
+        <Feature $reverse data-aos="zoom-in-up" data-aos-offset="100">
           <div>
             <h2>Anúncio de cargas</h2>
             <p>
@@ -39,7 +39,7 @@ export function Features() {
             </p>
           </div>
         </Feature>
-        <Feature reverse data-aos="zoom-in-up" data-aos-offset="100">
+        <Feature $reverse data-aos="zoom-in-up" data-aos-offset="100">
           <div>
             <h2>Encontre cargas disponíveis</h2>
             <p>

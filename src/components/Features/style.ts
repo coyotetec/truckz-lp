@@ -31,7 +31,7 @@ export const Content = styled.div`
 `;
 
 type FeatureProps = {
-  reverse?: boolean;
+  $reverse?: boolean;
 };
 
 export const Feature = styled.div<FeatureProps>`
@@ -55,7 +55,8 @@ export const Feature = styled.div<FeatureProps>`
   }
 
   @media ${devices.md} {
-    flex-direction: ${({ reverse }) => (reverse ? 'column-reverse' : 'column')};
+    flex-direction: ${({ $reverse }) =>
+      $reverse ? 'column-reverse' : 'column'};
 
     div {
       padding-top: 0.5rem;

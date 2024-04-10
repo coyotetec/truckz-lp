@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 type ButtonProps = {
-  show: string;
+  $show: string;
 };
 
 export const ButtonTop = styled.button<ButtonProps>`
@@ -20,7 +20,7 @@ export const ButtonTop = styled.button<ButtonProps>`
   position: fixed;
   right: 32px;
   transition: all 0.3s ease-in-out;
-  transform: ${({ show }) => `translateY(${show})`};
+  transform: ${({ $show }) => `translateY(${$show})`};
   width: 48px;
 
   span {
