@@ -478,7 +478,7 @@ Error generating stack: `+i.message+`
   }
 
   @media ${tt.md} {
-    flex-direction: ${({reverse:e})=>e?"column-reverse":"column"};
+    flex-direction: ${({$reverse:e})=>e?"column-reverse":"column"};
 
     div {
       padding-top: 0.5rem;
@@ -501,7 +501,7 @@ Error generating stack: `+i.message+`
   position: fixed;
   right: 32px;
   transition: all 0.3s ease-in-out;
-  transform: ${({show:e})=>`translateY(${e})`};
+  transform: ${({$show:e})=>`translateY(${e})`};
   width: 48px;
 
   span {
@@ -516,7 +516,7 @@ Error generating stack: `+i.message+`
   &:hover {
     width: 165px;
   }
-`,Ux="/assets/arrowTop-c1beb20d.svg";function Bx({onVisible:e}){return P.jsx(Zt,{to:"home",smooth:!0,duration:500,children:P.jsxs(Fx,{show:e,children:[P.jsx("span",{children:"Voltar ao topo"}),P.jsx("img",{src:Ux,alt:""})]})})}function Hx(){const{ref:e,inView:t}=zx();return P.jsx(Nx,{id:"features",children:P.jsxs(Dx,{children:[P.jsx("h1",{children:"O Melhor do Truckz"}),P.jsxs(tu,{reverse:!0,"data-aos":"zoom-in-up","data-aos-offset":"100",children:[P.jsxs("div",{children:[P.jsx("h2",{children:"Anúncio de cargas"}),P.jsx("p",{children:"Insira detalhes importantes como tipo de carga e locais, e descubra uma rede de motoristas."})]}),P.jsx("img",{src:Ix,alt:"Ilustração de pessoas carregando caixas com localização"})]}),P.jsxs(tu,{"data-aos":"zoom-in-up","data-aos-offset":"100",children:[P.jsx("img",{src:bx,alt:"Ilustração de mulher buscando um perfil ideal de motorista"}),P.jsxs("div",{children:[P.jsx("h2",{children:"Busca de motoristas"}),P.jsx("p",{ref:e,children:"Encontre motoristas ideais para suas cargas através de critérios como distância e avaliações."})]})]}),P.jsxs(tu,{reverse:!0,"data-aos":"zoom-in-up","data-aos-offset":"100",children:[P.jsxs("div",{children:[P.jsx("h2",{children:"Encontre cargas disponíveis"}),P.jsx("p",{children:"Navegue por uma variedade de opções de carga, incluindo tipos, locais e datas de entrega."})]}),P.jsx("img",{src:Ax,alt:"Motorista carregando caixas no carro"})]}),P.jsx(Bx,{onVisible:t?"2px":"96px"})]})})}const Wx=Oe.footer`
+`,Ux="/assets/arrowTop-c1beb20d.svg";function Bx({onVisible:e}){return P.jsx(Zt,{to:"home",smooth:!0,duration:500,children:P.jsxs(Fx,{$show:e,children:[P.jsx("span",{children:"Voltar ao topo"}),P.jsx("img",{src:Ux,alt:""})]})})}function Hx(){const{ref:e,inView:t}=zx();return P.jsx(Nx,{id:"features",children:P.jsxs(Dx,{children:[P.jsx("h1",{children:"O Melhor do Truckz"}),P.jsxs(tu,{$reverse:!0,"data-aos":"zoom-in-up","data-aos-offset":"100",children:[P.jsxs("div",{children:[P.jsx("h2",{children:"Anúncio de cargas"}),P.jsx("p",{children:"Insira detalhes importantes como tipo de carga e locais, e descubra uma rede de motoristas."})]}),P.jsx("img",{src:Ix,alt:"Ilustração de pessoas carregando caixas com localização"})]}),P.jsxs(tu,{"data-aos":"zoom-in-up","data-aos-offset":"100",children:[P.jsx("img",{src:bx,alt:"Ilustração de mulher buscando um perfil ideal de motorista"}),P.jsxs("div",{children:[P.jsx("h2",{children:"Busca de motoristas"}),P.jsx("p",{ref:e,children:"Encontre motoristas ideais para suas cargas através de critérios como distância e avaliações."})]})]}),P.jsxs(tu,{$reverse:!0,"data-aos":"zoom-in-up","data-aos-offset":"100",children:[P.jsxs("div",{children:[P.jsx("h2",{children:"Encontre cargas disponíveis"}),P.jsx("p",{children:"Navegue por uma variedade de opções de carga, incluindo tipos, locais e datas de entrega."})]}),P.jsx("img",{src:Ax,alt:"Motorista carregando caixas no carro"})]}),P.jsx(Bx,{onVisible:t?"2px":"96px"})]})})}const Wx=Oe.footer`
   background-color: ${({theme:e})=>e.colors.black[600]};
   display: flex;
   flex-direction: column;
